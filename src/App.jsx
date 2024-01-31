@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { useNavigate } from "react-router-dom";
+
 
 function Registration() {
   const initialValues = { username: "", email: "", password: "", confirmPassword: "" };
@@ -24,7 +24,6 @@ function Registration() {
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
-      navigate("/", { state: { successMessage: "Registration successful!" } });
     }
   }, [formErrors]);
 
