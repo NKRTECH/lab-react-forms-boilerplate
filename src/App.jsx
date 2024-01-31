@@ -7,7 +7,7 @@ function Registration() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const navigate = useNavigate();
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
